@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en"></html>
 <head>
 	<meta charset="UTF-8">
-	<title>Tou You 的个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #eef2f5;
+            header { text-align: center; margin-top: 20px; }
 		}
 
 		h1, h2, h3 {
@@ -26,7 +27,7 @@
 		}
 
 		a {
-			color: #8500aa;
+			color: #2800aa;
 			text-decoration: none;
 			font-weight: bold;
 			padding: 0.1em 0.3em;
@@ -37,30 +38,33 @@
 
 		a:hover {
 			background-color: #8500aa;
-			color: #fff;
+			color: #ff9ef7;
 		}
+
+        nav { margin-top: 20px; text-align: center; }
+        nav button { 
+            margin: 0 10px; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border: none; 
+            border-radius: 5px; 
+            box-shadow: 2px 2px 5px #36ff4ab3; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+        }
+        nav button:hover {
+            transform: scale(1.1);
+        }
+        section { display: none; margin: 20px; }
+        section.active { display: block; }
 	</style>
 </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Webpage</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        header { text-align: center; margin-top: 20px; }
-        nav { margin-top: 20px; text-align: center; }
-        nav button { margin: 0 5px; }
-        section { display: none; margin: 20px; }
-        section.active { display: block; }
-    </style>
-</head>
-
-<body>
+<body> 
     <header>
-        <h1>个人网页 | Personal Webpage | 個人ウェブページ</h1>
+        <h1>网页 | Webpage | ウェブページ</h1>
     </header>
-    
+
     <nav>
         <button onclick="showSection('cn')">中文</button>
         <button onclick="showSection('en')">English</button>
@@ -68,7 +72,10 @@
     </nav>
     
     <section id="cn" class="active">
-              
+        <header>
+            <h1>邓勇的个人网页</h1>
+        </header>
+
         <h2>基本信息</h2>
         <p>姓名：邓勇</p>
         <p>职业：研究生</p>
@@ -80,7 +87,7 @@
             <li>Github: <a href="https://github.com/YongDeng715#">github.com/YongDeng715</a></li>
             <li>个人主页：<a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
             <li>电子邮件：zhangsan@example.com</li>
-            <li><a href="#">其他联系方式</a>
+            <li>其他联系方式
                 <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">知乎(里面有些很有趣的文章哦哦)</a></p>
                 <p><a href="https://blog.csdn.net/Cosmosity">我的博客(已经不更新了,现在在知乎写文章)</a></p>
             </li>
@@ -97,15 +104,17 @@
 
         <h2>项目作品</h2>
         <ul>
-			<li><a href="#">项目一</a></li>
-			<li><a href="#">项目二</a></li>
-			<li><a href="#">项目三</a></li>
-            <li>项目1：自动驾驶系统</li>
-            <li>项目2：智能机器人</li>
+			<li><h3><a href="#">项目一</a></h3></li>
+			<li><h3><a href="#">项目二</a></h3></li>
+			<li><h3><a href="#">项目三</a></h3></li>
         </ul>
     </section>
     
     <section id="en">
+        <header>
+            <h1>Deng Yong's Personal Webpage</h1>
+        </header>
+
         <h2>Basic Information</h2>
         <p>Name: Zhang San</p>
         <p>Profession: Graduate Student</p>
@@ -116,7 +125,7 @@
         <ul>
             <li>Github: <a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
             <li>Email: zhangsan@example.com</li>
-            <li><a href="#">Connect</a>
+            <li>Other Connections
                 <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">Zhihu(里面有些很有趣的文章哦哦)</a></p>
                 <p><a href="https://blog.csdn.net/Cosmosity">My CSDN Blog(已经不更新了,现在在知乎写文章)</a></p>
             </li>
@@ -139,6 +148,10 @@
     </section>
     
     <section id="jp">
+        <header>
+            <h1>陶陽の個人ウェブページ</h1>
+        </header>
+
         <h2>基本情報</h2>
         <p>名前：張 三</p>
         <p>職業：大学院生</p>
