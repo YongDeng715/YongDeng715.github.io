@@ -11,35 +11,60 @@
             header { text-align: center; margin-top: 20px; }
 		}
 
-		h1, h2, h3 {
-			color: #8500aa;
-			text-align: center;
-			margin-bottom: 0;
-		}
+        h1 {
+            font-size: 2.5em;
+            color: black;
+            text-align: center;
+            margin-bottom: 0;
+            font-family: 'Arial Black', sans-serif;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #8500aa; 
+            text-align: left;
+            margin-bottom: 0;
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+        h3 {
+            font-size: 1.0em;
+            color: black;
+            text-align: left;
+            margin-bottom: 0;
+            font-family: 'Georgia', serif;
+        }
 
-		h1 {
-			font-size: 3em; none;
-			padding-left: 0;
-		}
 
 		li {
 			margin-bottom: 0.5em;
 		}
+        a {
+            color: #2b099bee; /* 蓝色 */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+            background-color: #f2f2f2;
+            transition: background-color 0.2s ease-in-out;
+            font-family: '楷体', KaiTi, STKaiti, serif; /* 使用楷体字体 */
+        }
 
-		a {
-			color: #2800aa;
-			text-decoration: none;
-			font-weight: bold;
-			padding: 0.1em 0.3em;
-			border-radius: 3px;
-			background-color: #f2f2f2;
-			transition: background-color 0.2s ease-in-out;
-		}
+        a:hover {
+            background-color: #8500aa; /* 紫色 */
+            color: #ff9ef7; /* 淡粉色 */
+        }
 
-		a:hover {
-			background-color: #8500aa;
-			color: #ff9ef7;
-		}
+
+        .education {
+            display: flex;
+            justify-content: space-between;
+        }
+        .education .left {
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        .education .right {
+            font-family: '楷体', KaiTi, STKaiti, serif;
+        }
 
         nav { margin-top: 20px; text-align: center; }
         nav button { 
@@ -80,109 +105,132 @@
         <p>姓名：邓勇</p>
         <p>职业：研究生</p>
         <p>所在城市：中国，南京</p>
-        <p>简介：我本科毕业于西安交通大学自动化专业，现在就读于中国科学院自动化研究所。</p>
         
         <h2>联系方式</h2>
         <ul>
-            <li>Github: <a href="https://github.com/YongDeng715#">github.com/YongDeng715</a></li>
-            <li>个人主页：<a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
-            <li>电子邮件：zhangsan@example.com</li>
+            <li>Github: <a href="https://github.com/YongDeng715#"> github.com/YongDeng715</a></li>
+            <li>个人主页: <a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
+            <li>电子邮件: <a href="mailto: dengyong2023@ia.ac.cn"> dengyong2023@ia.ac.cn</a></li>
             <li>其他联系方式
-                <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">知乎(里面有些很有趣的文章哦哦)</a></p>
-                <p><a href="https://blog.csdn.net/Cosmosity">我的博客(已经不更新了,现在在知乎写文章)</a></p>
+                <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">知乎</a>(里面有些很有趣的文章哦)</p>
+                <p><a href="https://blog.csdn.net/Cosmosity">我的CSDN博客</a>(已经不更新了,现在在知乎写文章)</p>
             </li>
         </ul>
         <h2>教育背景</h2>
-        <p>西安交通大学 - 自动化学士 (2015-2019)</p>
-        <p>中国科学院自动化研究所 - 研究生 (2019-至今)</p>
+        
+        <p><div class="education">
+            <div class="left">西安交通大学 - <span style="font-family: '楷体';">自动化学士</span></div>
+            <div class="right">(2019-2023)</div>
+        </div></p>
+        <p><div class="education">
+            <div class="left">中国科学院自动化研究所 - <span style="font-family: '楷体';">人工智能硕士</span></div>
+            <div class="right">(2023-至今)</div>
+        </div></p>
 
         <h2>技能</h2>
         <ul>
-            <li>编程语言：Python, C++</li>
-            <li>机器学习与人工智能</li>
+            <li>编程技能: Python, C/C++, PyTorch, FAISS, scikit-image, openCV, Git</li>
+            <li>研究兴趣: 视觉地点识别，图像检索，多模态大模型，目标检测，图像识别</li>
         </ul>
 
-        <h2>项目作品</h2>
+        <h2>项目经历</h2>
         <ul>
-			<li><h3><a href="#">项目一</a></h3></li>
-			<li><h3><a href="#">项目二</a></h3></li>
-			<li><h3><a href="#">项目三</a></h3></li>
+			<li><h3>项目一</h3></li>
+			<li><h3>项目二</h3></li>
+			<li><h3>项目三</h3></li>
         </ul>
     </section>
-    
+
     <section id="en">
         <header>
-            <h1>Deng Yong's Personal Webpage</h1>
+            <h1>Deng Yong's Personal Page</h1>
         </header>
-
+    
         <h2>Basic Information</h2>
-        <p>Name: Zhang San</p>
-        <p>Profession: Graduate Student</p>
-        <p>City: Beijing, China</p>
-        <p>Introduction: I graduated from Xi'an Jiao Tong University with a major in Automation and am currently studying at the Institute of Automation, Chinese Academy of Sciences.</p>
-
+        <p>Name: Deng Yong</p>
+        <p>Occupation: Graduate Student</p>
+        <p>City: Nanjing, China</p>
+        
         <h2>Contact Information</h2>
         <ul>
-            <li>Github: <a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
-            <li>Email: zhangsan@example.com</li>
-            <li>Other Connections
-                <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">Zhihu(里面有些很有趣的文章哦哦)</a></p>
-                <p><a href="https://blog.csdn.net/Cosmosity">My CSDN Blog(已经不更新了,现在在知乎写文章)</a></p>
+            <li>Github: <a href="https://github.com/YongDeng715#">github.com/YongDeng715</a></li>
+            <li>Personal Page: <a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
+            <li>Email: <a href="mailto:dengyong2023@ia.ac.cn">dengyong2023@ia.ac.cn</a></li>
+            <li>Other Contacts
+                <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">Zhihu</a> (Interesting articles can be found here!)</p>
+                <p><a href="https://blog.csdn.net/Cosmosity">My CSDN Blog</a> (No longer updated, now writing on Zhihu)</p>
             </li>
         </ul>
         <h2>Education</h2>
-        <p>Xi'an Jiao Tong University - Bachelor in Automation (2015-2019)</p>
-        <p>Institute of Automation, Chinese Academy of Sciences - Graduate Student (2019-present)</p>
-
+        
+        <p><div class="education">
+            <div class="left">Xi'an Jiaotong University - <span style="font-family: '楷体';">Bachelor in Automation</span></div>
+            <div class="right">(2019-2023)</div>
+        </div></p>
+        <p><div class="education">
+            <div class="left">Institute of Automation, Chinese Academy of Sciences - <span style="font-family: '楷体';">Master in Artificial Intelligence</span></div>
+            <div class="right">(2023-present)</div>
+        </div></p>
+    
         <h2>Skills</h2>
         <ul>
-            <li>Programming Languages: Python, C++</li>
-            <li>Machine Learning and Artificial Intelligence</li>
+            <li>Programming Skills: Python, C/C++, PyTorch, FAISS, scikit-image, openCV, Git</li>
+            <li>Research Interests: Visual place recognition, image retrieval, multimodal large models, object detection, image recognition</li>
         </ul>
-
+    
         <h2>Projects</h2>
         <ul>
-            <li>Project 1: Autonomous Driving System</li>
-            <li>Project 2: Intelligent Robot</li>
+            <li><h3>Project One</h3></li>
+            <li><h3>Project Two</h3></li>
+            <li><h3>Project Three</h3></li>
         </ul>
     </section>
-    
+     
     <section id="jp">
         <header>
-            <h1>陶陽の個人ウェブページ</h1>
+            <h1>鄧勇の個人ページ</h1>
         </header>
-
+    
         <h2>基本情報</h2>
-        <p>名前：張 三</p>
+        <p>名前：鄧勇</p>
         <p>職業：大学院生</p>
-        <p>都市：中国、北京</p>
-        <p>紹介：西安交通大学で自動化を専攻し卒業し、現在は中国科学院自動化研究所で学んでいます。</p>
-
+        <p>所在地：中国、南京</p>
+        
         <h2>連絡先</h2>
         <ul>
-            <li>Github: <a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
-            <li>メール： zhangsan@example.com</li>
-            <li><a href="#">Connect</a>
-                <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">Zhihu(里面有些很有趣的文章哦哦)</a></p>
-                <p><a href="https://blog.csdn.net/Cosmosity">My CSDN Blog(已经不更新了,现在在知乎写文章)</a></p>
+            <li>Github: <a href="https://github.com/YongDeng715#">github.com/YongDeng715</a></li>
+            <li>個人ページ: <a href="https://yongdeng715.github.io/#">github.com/yongdeng715.github.io</a></li>
+            <li>メール: <a href="mailto:dengyong2023@ia.ac.cn">dengyong2023@ia.ac.cn</a></li>
+            <li>その他の連絡先
+                <p><a href="https://www.zhihu.com/people/deng-xiao-yong-37">Zhihu</a>（面白い記事があります！）</p>
+                <p><a href="https://blog.csdn.net/Cosmosity">私のCSDNブログ</a>（更新停止中、現在は知乎で記事を執筆中）</p>
             </li>
         </ul>
         <h2>学歴</h2>
-        <p>西安交通大学 - 自動化の学士 (2015-2019)</p>
-        <p>中国科学院自動化研究所 - 大学院生 (2019-現在)</p>
-
+        
+        <p><div class="education">
+            <div class="left">西安交通大学 - <span style="font-family: '楷体';">自動化学士</span></div>
+            <div class="right">(2019-2023)</div>
+        </div></p>
+        <p><div class="education">
+            <div class="left">中国科学院自動化研究所 - <span style="font-family: '楷体';">人工知能修士</span></div>
+            <div class="right">(2023-現在)</div>
+        </div></p>
+    
         <h2>スキル</h2>
         <ul>
-            <li>プログラミング言語：Python, C++</li>
-            <li>機械学習と人工知能</li>
+            <li>プログラミングスキル: Python, C/C++, PyTorch, FAISS, scikit-image, openCV, Git</li>
+            <li>研究興味: ビジュアルプレイス認識、画像検索、マルチモーダル大規模モデル、物体検出、画像認識</li>
         </ul>
-
-        <h2>プロジェクト</h2>
+    
+        <h2>プロジェクト経験</h2>
         <ul>
-            <li>プロジェクト1：自動運転システム</li>
-            <li>プロジェクト2：インテリジェントロボット</li>
+            <li><h3>プロジェクト1</h3></li>
+            <li><h3>プロジェクト2</h3></li>
+            <li><h3>プロジェクト3</h3></li>
         </ul>
     </section>
+    
 
     <script>
         function showSection(lang) {
